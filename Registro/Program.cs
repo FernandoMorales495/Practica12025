@@ -1,8 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using Registro.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<RegistroAcademicoBaseContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Conn"));
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
