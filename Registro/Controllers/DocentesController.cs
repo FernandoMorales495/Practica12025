@@ -19,9 +19,19 @@ namespace Registro.Controllers
         }
 
         // GET: Docentes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(Docente docente,int registros=1)
+
         {
-            return View(await _context.Docentes.ToListAsync());
+            var query = _context.Docentes.AsQueryable();
+            if (!string.IsNullOrWhiteSpace(docente.Nombre))
+                query = query.Where(s => s.Nombre.Contains(docente.Nombre));
+            if (!string.IsNullOrWhiteSpace(docente.Apellido))
+                query = query.Where(s => s.Apellido.Contains(docente.Apellido));
+            if (registros > 0)
+                query = query.Take(registros);
+
+
+            return View(await query.ToListAsync());
         }
 
         // GET: Docentes/Details/5
