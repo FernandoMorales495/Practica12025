@@ -5,6 +5,7 @@
     var BuscarDocentes = new Docente();
 }
 
+
 <h1>Docentes</h1>
 
 
@@ -41,7 +42,7 @@
 
         <div class="form-group col-4 mt-2">
 
-            <input type="submit" value="Buscar" class="btn btn-primary" />
+           <input type="submit" value="Buscar" class="btn btn-dark" />
             <a asp-action="Create" class="btn btn-dark"><i class="bi bi-person-plus-fill"></i>Crear nuevo</a>
         </div>
     </div>
@@ -110,9 +111,9 @@
                    <tr>
                         <td><a asp-action="Edit" asp-route-id="@item.IdDocente" class="btn btn-dark" title="Editar"><i class="bi bi-pencil-square"></i></a></td>
    
-                    <td><a asp-action="Details" asp-route-id="@item.IdDocente" class="btn btn-light" title="Detalles"><i class="bi bi-eye-fill"></i></a></td>
+                    <td><a asp-action="Details" asp-route-id="@item.IdDocente" class="btn btn-dark" title="Detalles"><i class="bi bi-eye-fill"></i></a></td>
        
-                    <td><a asp-action="Delete" asp-route-id="@item.IdDocente" class="btn btn-danger" title="Borrar"><i class="bi bi-trash3-fill"></i> </a></td>
+                    <td><a asp-action="Delete" asp-route-id="@item.IdDocente" class="btn btn-dark" title="Borrar"><i class="bi bi-trash3-fill"></i> </a></td>
 
                     </tr>
            </table>

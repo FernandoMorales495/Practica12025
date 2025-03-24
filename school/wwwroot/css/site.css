@@ -18,15 +18,5 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
-    background-color: white;
-}
-label{
-    color:black;
-}
-h1{
-    color:red;
-}
-hr{
-    background-color:red;
+  margin-bottom: 60px;
 }

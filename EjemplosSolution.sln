@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medidas", "Medidas\Medidas.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registro", "Registro\Registro.csproj", "{1B808DC0-6494-47AC-9CA7-AEDC8A008DF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "school", "school\school.csproj", "{049AFD7D-E61F-4561-8738-425EB08B1505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1B808DC0-6494-47AC-9CA7-AEDC8A008DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B808DC0-6494-47AC-9CA7-AEDC8A008DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B808DC0-6494-47AC-9CA7-AEDC8A008DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{049AFD7D-E61F-4561-8738-425EB08B1505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{049AFD7D-E61F-4561-8738-425EB08B1505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{049AFD7D-E61F-4561-8738-425EB08B1505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{049AFD7D-E61F-4561-8738-425EB08B1505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
